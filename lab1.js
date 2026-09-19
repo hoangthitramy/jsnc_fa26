@@ -35,3 +35,16 @@ sayHello("An");
 sayHello("Bình");
 sayHello("Chi");
 sayHello("Đức");
+
+console.log("\n BAI 5 ");
+const result = sum(13, 23);
+console.log(result);
+
+console.log("\ BAI 6 ");
+function calculateTotal(price, quantity){
+    return calculateTotal = price * quantity;
+};
+const total = calculateTotal(50000, 3);
+console.log(total);
+
+console.log("\ BAI 7 ");
