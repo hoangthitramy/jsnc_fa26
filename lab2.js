@@ -130,3 +130,52 @@ for (let i = 0; i < students2.length; i++) {
 
 document.getElementById("students").innerHTML = html;
 
+console.log("BÀI TẬP TỔNG HỢP");
+const products = [
+  {
+    id: 1,
+    name: "iPhone 15",
+    price: 20000000,
+  },
+  {
+    id: 2,
+    name: "Samsung Galaxy S24",
+    price: 18000000,
+  },
+  {
+    id: 3,
+    name: "Xiaomi 14",
+    price: 12000000,
+  },
+];
+
+console.log("Danh sách sản phẩm:");
+console.log(products);
+
+console.log("\nTên sản phẩm - Giá:");
+
+for (let i = 0; i < products.length; i++) {
+  console.log(products[i].name + " - " + products[i].price);
+}
+
+let total = 0;
+
+for (let i = 0; i < products.length; i++) {
+  total = total + products[i].price;
+}
+
+console.log("\nTổng giá của tất cả sản phẩm:", total);
+
+const productList = document.getElementById("products");
+
+let html = "";
+
+for (let i = 0; i < products.length; i++) {
+  html += `
+    <p>
+      ${products[i].name} - ${products[i].price}
+    </p>
+  `;
+}
+
+productList.innerHTML = html;
