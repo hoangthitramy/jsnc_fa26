@@ -38,3 +38,10 @@ console.log("\nBAI 4");
 console.log("Bình phương của 5:", square(5)); 
 console.log("Tổng của 10 và 20:", sum(10, 20)); 
 console.log(sayHello("An")); 
+
+console.log("\nBAI 5");
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map(num => num * 2);
+
+console.log(doubledNumbers); 
+
