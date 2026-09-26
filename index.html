@@ -5,8 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript Nâng Cao - WEB2064</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://tailwindcss.com"></script>
   </head>
   <body>
+    <body class="p-8 bg-gray-50 font-sans text-gray-800">
+
+    <div class="max-w-5xl mx-auto space-y-10">
+        
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-2 text-blue-600">Bài tập 6: map với Array Object</h2>
+            <p class="text-sm text-gray-500 mb-2">Mở Console (F12) để kiểm tra mảng kết quả.</p>
+            <div id="bt6-output" class="bg-gray-800 text-green-400 p-3 rounded font-mono text-sm"></div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-4 text-blue-600">Bài tập 8: Hiển thị sản phẩm (Cơ bản)</h2>
+            <table class="w-full border-collapse border border-gray-300 text-left">
+                <thead>
+                    <tr class="bg-gray-100 font-semibold">
+                        <th class="px-4 py-2 border border-gray-300">ID</th>
+                        <th class="px-4 py-2 border border-gray-300">Tên sản phẩm</th>
+                        <th class="px-4 py-2 border border-gray-300">Giá</th>
+                        <th class="px-4 py-2 border border-gray-300 text-center">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="products-simple">
+                   
+                </tbody>
+            </table>
+        </div>
+
+      
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-4 text-blue-600">Bài tập 33: Bài tập tổng hợp (Đầy đủ thuộc tính)</h2>
+            <table class="w-full border-collapse border border-gray-300 text-left">
+                <thead>
+                    <tr class="bg-gray-100 font-semibold">
+                        <th class="px-4 py-2 border border-gray-300">ID</th>
+                        <th class="px-4 py-2 border border-gray-300">Tên sản phẩm</th>
+                        <th class="px-4 py-2 border border-gray-300">Giá</th>
+                        <th class="px-4 py-2 border border-gray-300">Danh mục</th>
+                        <th class="px-4 py-2 border border-gray-300 text-center">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="main-product-table">
+                   
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
     <nav class="bg-blue-600 text-white shadow">
       <div
         class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between"
@@ -22,7 +71,7 @@
     </nav>
     <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
       <h1 id="title" class="text-2xl font-semibold mb-6">Danh sách</h1>
-
+      <div id="students"></div>
       <div class="overflow-x-auto">
         <table class="w-full border border-gray-300 rounded-lg">
           <thead class="bg-gray-100">
@@ -65,9 +114,10 @@
     <script src="lab1.js"></script>
     <script src="bai2.js"></script>
     <script src="lab2.js"></script>
+    <script src="bai3.js"></script>
+    <script src="lab3.js"></script>
 
 
   </body>
 </html>
-
 
